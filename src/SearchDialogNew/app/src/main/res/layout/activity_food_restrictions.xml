@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".foods.FoodRestrictions">
+
+    <TextView
+        android:id="@+id/restrictedFoodInstructions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="37dp"
+        android:text="@string/restrictedFoodInstructions"
+        android:textColor="@color/dark_red"
+        app:layout_constraintBottom_toTopOf="@+id/btnSearchFoodRestrictions"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.888" />
+
+    <Button
+        android:id="@+id/btnSearchFoodRestrictions"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/dark_red"
+        android:paddingStart="40dp"
+        android:text="Search for food..."
+        android:textAlignment="textStart"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toTopOf="@+id/restrictedFoodRecyclerView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/titleRestrictedFood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnSearchFoodRestrictions"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/helvetica"
+        android:text="List of your Restricted Foods:"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/restrictedFoodRecyclerView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSearchFoodRestrictions" />
+
+    <View
+        android:id="@+id/redLine"
+        android:layout_width="150dp"
+        android:layout_height="1dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleRestrictedFood" />
+
+    <ImageButton
+        android:id="@+id/filtersFood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="32dp"
+        android:background="@color/white"
+        android:onClick="imageOnClick"
+        android:src="@drawable/slider_filter2"
+        app:layout_constraintStart_toEndOf="@+id/titleRestrictedFood"
+        app:layout_constraintTop_toBottomOf="@+id/btnSearchFoodRestrictions" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/restrictedFoodRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="390dp"
+        android:layout_marginBottom="16dp"
+        android:paddingTop="15dp"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <Switch
+        android:id="@+id/switchLayoutsDynamically"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="61dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/restrictedFoodRecyclerView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/filtersFood"
+        app:layout_constraintTop_toBottomOf="@+id/btnSearchFoodRestrictions" />
+
+    <TextView
+        android:id="@+id/changeViewsDynamically"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/restrictedFoodRecyclerView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/switchLayoutsDynamically"
+        app:layout_constraintTop_toBottomOf="@+id/btnSearchFoodRestrictions"
+        app:layout_constraintVertical_bias="0.0" />
+
+</android.support.constraint.ConstraintLayout>

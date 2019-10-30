@@ -1,0 +1,213 @@
+<resources>
+    <string name="app_name">LifePulse+</string>
+    <string name="lorem">Lorem ipsum dolor sit amet, consesmod tempor inostrud exercitation ullamco.</string>
+    <string name="lorem_table">Lorem ipsum \ndolor sit amet, \nconsesmod tempor \ninostrud \nexercitation ullamco.</string>
+    <string name="app_title">LifePulse+</string>
+
+    <string name="goal_title">Welcome to your goal setting</string>
+    <string name="goal_add_info">
+        By setting your goals, you will be able to keep track of your fitness level in a precise way.
+    </string>
+    <string name="click_add_info">
+        Click + icon to add goals
+    </string>
+    <string name="title_activity_goal_setting">GoalSetting</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="customize_your_goal">Customize your goal:</string>
+    <string name="save_button_name">SAVE</string>
+    <string name="list_of_your_exercises">List of your exercises:</string>
+
+    <!--BMI-->
+    <string name="timer">time</string>
+    <string name="status">status</string>
+    <string name="personal_chart">See Personal</string>
+    <string name="bmi">BMI: </string>
+
+    <!-- Heart Rate -->
+    <string name="heart_rate_reminder">Don\'t Forget to Take Your Heart Rate</string>
+    <string name="submit_button">Submit</string>
+    <string name="cancel_button">Cancel</string>
+    <string name="heartRateIndicator">Your Heart Rate:</string>
+
+    <!--Daily progress chart-->
+
+    <string name="daily_page_title">Daily Progress Dashboard</string>
+    <string name="heart_rate_block_title">Heart Rate</string>
+    <string name="total_minutes">Total Minutes: 70 mins.</string>
+    <string name="avg_heart_rate">Average Heart Rate:</string>
+    <string name="highest_heart_rate">Highest Heart Rate: 185 bpm</string>
+    <string name="calories_burned">Calories burned: 500</string>
+    <string name="fitness_title_block">Fitness </string>
+    <string name="fitness_image_desc">Fitness Image</string>
+    <string name="cardio_image_desc">Cardio Image</string>
+
+
+    <!--Weekly Chart-->
+    <string name="weekly_page_title">Weekly Report</string>
+
+
+    <!--Main page-->
+    <string name="basic_information">BASIC INFORMATION</string>
+    <string name="heart_condition">Heart Condition:</string>
+    <string name="activity_level">Activity Level:</string>
+
+    <!--Doctor Recommendation-->
+    <string name="doctor_recommendation">Doctor Recommendation</string>
+    <string name="dear_to">Dear </string>
+
+
+    <!-- Test text -->
+    <string name="test_text_title">Exercise Name</string>
+    <string name="third_exercise">Third exercise</string>
+    <string name="second_exercise">Second exercise</string>
+    <string name="first_exercise">First exercise</string>
+    <string name="logo">logo</string>
+    <string name="arrow_icon_click">arrow_icon_click</string>
+    <string name="daily_tips">Daily Tips:</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="annual_progress_chart">Annual Progress Chart</string>
+    <string name="khalid">Khalid</string>
+    <string name="miraj">Miraj</string>
+    <string name="ody">Ody</string>
+    <string name="kevin">Kevin</string>
+    <string name="good">Good</string>
+    <string name="listView">List</string>
+    <string name="gridView">Grid</string>
+
+    <!-- Diet Plan -->
+    <string name="my_diet_plan">My Diet Plan</string>
+    <string name="time_of_the_day_n_day_of_the_week">Time of the day/\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020Day of the week</string>
+    <string name="monday">Monday</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="thursday">Thursday</string>
+    <string name="friday">Friday</string>
+    <string name="saturday">Saturday</string>
+    <string name="sunday">Sunday</string>
+    <string name="breakfast">Breakfast</string>
+    <string name="lunch">Lunch</string>
+    <string name="diner">Diner</string>
+    <string name="supper">Supper</string>
+    <string name="snacks">Snacks</string>
+    <string name="abnormal_heart_rhythms">Abnormal Heart Rhythms</string>
+    <string name="low_heart_rate">Low Heart Rate</string>
+    <string name="congenital_heart_defect">Congenital Heart Defect</string>
+    <string name="monthly_progress_chart">Monthly Progress Chart</string>
+    <string-array name="days">
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+        <item>Sunday</item>
+    </string-array>
+
+    <!-- Recipe List -->
+    <string name="ingredients">Ingredients</string>
+    <string name="recipe_name">Recipe Name</string>
+
+    <string name="description">description</string>
+    <string name="about">About</string>
+    <string name="settings">Settings</string>
+    <string name="help">Help</string>
+    <string name="create_your_lifepulse_profile">Create your LifePulse+ profile</string>
+    <string name="full_name">Full Name:</string>
+    <string name="date_of_birth">Date of Birth:</string>
+    <string name="gender">Gender:</string>
+    <string name="height">Height:</string>
+    <string name="weight">Weight:</string>
+    <string name="register">Register</string>
+    <string name="welcome">Welcome</string>
+
+    <string name="select_an_exercise_to_add_to_your_list">Select an exercise to add to your list:</string>
+    <string name="exercise_list">Exercise List</string>
+    <string name="select_your_favorite_exercise_to_add_to_your_list">Select your favorite exercise to add to your list:</string>
+
+
+    <!-- Favorite Food -->
+    <string name="favFoodInstructions">This page shows your favorite foods.</string>
+
+    <!-- Recommended Food -->
+    <string name="recommendedFoodInstructions">This page shows you food you should eat based on your diet.</string>
+
+    <!-- Restricted Food -->
+    <string name="restrictedFoodInstructions">This page shows you food you should not eat because of allergies and diet.</string>
+    <string name="duration">Duration:</string>
+    <string name="start">start</string>
+
+    <!-- Common strings -->
+    <string name="ok">ok</string>
+    <string name="add">add</string>
+    <string name="reps_label">Reps:</string>
+    <string name="sets_label">Sets:</string>
+    <string name="take_picture">Snap It!</string>
+
+    <!-- Custom Food -->
+    <string name="add_step">Add Step</string>
+
+    <!--Filter fragment-->
+    <string name="sort_ascending">Alphabetical Ascending</string>
+    <string name="sort_descending">Alphabetical Descending</string>
+    <string name="alphabetical_sorting_label">Press a radio button to order the food in the list</string>
+    <string name="ok_button_fragment">Ok</string>
+
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+
+    <!-- Menu Titles -->
+    <string name="goalSettings">Goal Settings</string>
+    <string name="annualReport">Annual Report</string>
+    <string name="monthlyReport">Monthly Report</string>
+    <string name="doctorNote">Doctor Note</string>
+    <string name="favoriteFood">Favorite Food</string>
+    <string name="foodRecommendations">Food Recommendations</string>
+    <string name="restrictedFood">Restricted Food</string>
+    <string name="heartRate">Heart Rate</string>
+    <string name="caloriesTracker">Calories Tracker</string>
+    <string name="dietPlan">Diet Plan</string>
+    <string name="dailyChart">Daily Chart</string>
+    <string name="weeklyChart">Weekly Chart</string>
+    <string name="exercises">Exercises</string>
+    <string name="weightTracking">Weight Tracking</string>
+    <string name="menuTimer">Timer</string>
+    <string name="foodLog">Food Log</string>
+    <string name="BMI">BMI</string>
+    <string name="customRecipes">Custom Recipes</string>
+    <string name="foodRecipes">Food Recipes</string>
+    <string name="exercises_list">Exercises List</string>
+    <string name="steps">Steps</string>
+
+    <!-- Menus -->
+    <string name="aboutText">LifePulse+ is designed to help you get the best of exercises, a healthy diet and much more! Use this all-in-one fitness app to help you get fit.</string>
+    <string name="helpText">You can browse the various sections of the app by sliding your finger across the screen from left to right or by pressing on the three lines on the top-left of the screen.</string>
+    <string name="to_start_your_exercise_click_start">To start your exercise, click Start:</string>
+    <string name="you_can_update_your_profile_here">You can update your profile here.</string>
+    <string name="save">Save</string>
+
+    <!-- Snackbar -->
+    <string name="setting_snackbar_title">Profile Updated</string>
+    <string name="setting_snackbar_action">Done</string>
+    <string name="diary_snackbar_title">Diary Created</string>
+    <string name="diary_snackbar_action">Done</string>
+    <string name="length">Length:</string>
+    <string name="protein">Protein:</string>
+    <string name="sugar">Sugar:</string>
+    <string name="fat">Fat:</string>
+    <string name="cholesterol">Cholesterol:</string>
+    <string name="intensity">Intensity</string>
+    <string name="heartRateInstructions">Place your finger on the sensor of \nyour phone to read your heart rate.</string>
+    <string name="descriptionDiary">Description:</string>
+    <string name="guilt_level_diary">Guilt Level:</string>
+    <string name="name_diary">Name:</string>
+
+    <string-array name="duration_array">
+        <item>40 minutes</item>
+        <item>60 minutes</item>
+    </string-array>
+
+</resources>

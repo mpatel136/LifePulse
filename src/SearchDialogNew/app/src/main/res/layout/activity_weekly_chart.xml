@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".diet.WeeklyChart">
+
+    <Spinner
+        android:id="@+id/spinWeeklyFilter"
+        android:layout_width="140dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/heartRateBlock"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Spinner
+        android:id="@+id/spinMonthFilter"
+        android:layout_width="140dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/heartRateBlock"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.6" />
+
+    <LinearLayout
+        android:id="@+id/heartRateBlock"
+        android:layout_width="360dp"
+        android:layout_height="252dp"
+        android:layout_weight="1.0"
+        android:background="@color/background_color_blocks"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.215">
+
+        <TextView
+            android:id="@+id/txtHeartRateBlockTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/helvetica"
+            android:text="@string/heart_rate_block_title"
+            android:textColor="@color/black"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imgCardio"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginStart="235dp"
+            android:layout_marginTop="-55dp"
+            android:contentDescription="@string/cardio_image_desc"
+            app:srcCompat="@drawable/woman_pulse_heart" />
+
+        <TextView
+            android:id="@+id/txtTotalMinutesHeart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-70dp"
+            android:layout_marginBottom="30dp"
+            android:fontFamily="@font/helvetica"
+            android:text="@string/total_minutes"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txtAvgHeartRate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:fontFamily="@font/helvetica"
+            android:text="@string/avg_heart_rate"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txtHighestHeartRate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="-10dp"
+            android:fontFamily="@font/helvetica"
+            android:text="@string/highest_heart_rate"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/fitnessBlock"
+        android:layout_width="360dp"
+        android:layout_height="251dp"
+        android:background="@color/background_color_blocks"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.947">
+
+        <TextView
+            android:id="@+id/txtFitness"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="30dp"
+            android:fontFamily="@font/helvetica"
+            android:text="@string/fitness_title_block"
+            android:textColor="@color/black"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imgFitness"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="255dp"
+            android:layout_marginTop="-55dp"
+            android:contentDescription="@string/fitness_image_desc"
+            app:srcCompat="@drawable/people_stretching" />
+
+        <TextView
+            android:id="@+id/txtTotalMinutesFitness"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-50dp"
+            android:layout_marginBottom="30dp"
+            android:fontFamily="@font/helvetica"
+            android:text="@string/total_minutes"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txtCaloriesBurned"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:fontFamily="@font/helvetica"
+            android:text="@string/calories_burned"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/highestHeartRate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/helvetica"
+            android:text="@string/avg_heart_rate"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

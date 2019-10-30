@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".bmihealth.CustomRecipePart1">
+
+    <Button
+        android:id="@+id/btn_startCustomRecipe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="144dp"
+        android:text="start"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="395dp"
+        android:layout_height="293dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="288dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_startCustomRecipe">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_food_title"
+                android:layout_width="348dp"
+                android:layout_height="77dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="80dp"
+                android:text="Name"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/img_food"
+                app:layout_constraintTop_toBottomOf="@+id/btnMonthlyReport" />
+
+            <ImageView
+                android:id="@+id/img_food"
+                android:layout_width="214dp"
+                android:layout_height="177dp"
+                android:layout_marginTop="11dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnMonthlyReport"
+                app:srcCompat="@drawable/almonds" />
+
+            <TextView
+                android:id="@+id/txt_foodDescription"
+                android:layout_width="385dp"
+                android:layout_height="177dp"
+                android:text="Description" />
+
+            <TextView
+                android:id="@+id/txt_steps"
+                android:layout_width="395dp"
+                android:layout_height="127dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="133dp"
+                android:layout_marginEnd="24dp"
+                android:text="Description"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/txt_foodDescription"
+                app:layout_constraintTop_toBottomOf="@+id/btnMonthlyReport" />
+        </LinearLayout>
+    </ScrollView>
+
+    <FrameLayout
+        android:id="@+id/layout_custom"
+        android:layout_width="413dp"
+        android:layout_height="723dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </FrameLayout>
+
+</android.support.constraint.ConstraintLayout>

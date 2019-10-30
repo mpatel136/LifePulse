@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/updateExerciseLayout"
+            android:layout_width="395dp"
+            android:layout_height="715dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:id="@+id/imgCloseUpdateDialog"
+                    android:layout_width="38dp"
+                    android:layout_height="29dp"
+                    android:src="@drawable/icon_cancel" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:id="@+id/txtUpdateExerciseTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Update"
+                    android:layout_gravity="right"
+                    android:textColor="@color/darker_red"
+                    android:textSize="20sp"
+                    android:layout_weight="3.7"/>
+
+                <TextView
+                    android:id="@+id/txtExerciseNameUpdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.1"
+                    android:text="..."
+                    android:layout_gravity="right"
+                    android:textColor="@color/darker_red"
+                    android:textSize="20sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/duration"
+                    android:layout_weight="1"
+                    android:textSize="17sp"/>
+
+                <EditText
+                    android:id="@+id/etUpdateExerciseDuration"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Duration" />
+
+            </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/length"
+                android:layout_weight="1"
+                android:layout_marginTop="15dp"
+                android:textSize="17sp"/>
+
+            <Spinner
+                android:id="@+id/spinnerDurationUpdate"
+                android:layout_width="300dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:popupBackground="@color/dark_red">
+            </Spinner>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/txtUpdateExerciseSetsTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sets_label"
+                android:layout_weight="1"
+                android:textSize="17sp"/>
+
+            <EditText
+                android:id="@+id/etUpdateExerciseSets"
+                android:layout_width="320dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:hint="Sets" />
+
+        </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/txtUpdateExerciseRepsTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/reps_label"
+                    android:layout_weight="1"
+                    android:textSize="17sp"/>
+
+                <EditText
+                    android:id="@+id/etUpdateExerciseReps"
+                    android:layout_width="320dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:hint="Reps" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="60dp">
+
+                <Button
+                    android:id="@+id/btnUpdateExercise"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Update"
+                    android:textColor="@color/white"
+                    android:background="@color/colorAccent"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#b70f0a</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="dark_red">#b70f0a</color>
+    <color name="darker_red">#7d2709</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="purple">#5125ad</color>
+
+    <!--main activity-->
+    <color name="basic_information">#F7C3A8</color>
+    <color name="basic_fitness">#B5DAED</color>
+    <color name="main_title">#A03858</color>
+
+    <color name="coolRed">#FF1000</color>
+    <color name="kevinsColor">#FF4000</color>
+    <color name="orangeIsh">#FF4F11</color>
+    <color name="grey">#97a1b2</color>
+
+    <!--Daily progress chart-->
+    <color name="colorPrimaryDailyChart">#B72F82</color>
+    <color name="background_color_blocks">#F7F5F5</color>
+    <color name="light_blue">#0247FE</color>
+    <color name="light_blue_table_cells">#2566fc</color>
+    <color name="light_green">#66B033</color>
+
+    <color name="btn_disabled">#EEEEEE</color>
+    <color name="txt_disabled">#9E9E9E</color>
+
+</resources>

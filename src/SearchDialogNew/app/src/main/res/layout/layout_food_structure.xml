@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:layout_marginBottom="5dp"
+    android:layout_marginEnd="5dp"
+    android:background="@color/cardview_dark_background"
+    card_view:cardCornerRadius="6dp"
+    card_view:cardElevation="2dp"
+    card_view:cardMaxElevation="4dp"
+    card_view:contentPadding="5dp"
+    card_view:cardBackgroundColor="@color/cardview_light_background">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayoutFavFood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:dividerHeight="0.0px"
+            card_view:cardCornerRadius="6dp"
+            card_view:cardElevation="2dp"
+            card_view:cardMaxElevation="4dp"
+            card_view:cardPreventCornerOverlap="false"
+            card_view:contentPadding="5dp">
+
+            <ImageView
+                android:id="@+id/imgFoodRecyclerItem"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:src="@drawable/pepperoni_pizza" />
+
+        </android.support.v7.widget.CardView>
+
+
+        <LinearLayout
+            android:id="@+id/linearFoodFacts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="5dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txtFoodName"
+                    android:layout_width="284dp"
+                    android:layout_height="35dp"
+                    android:gravity="left"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:text="Food Name" />
+
+                <TextView
+                    android:id="@+id/txtProtein"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/protein"
+                    android:layout_marginTop="40dp"/>
+
+                <TextView
+                    android:id="@+id/txtSugar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sugar"
+                    android:layout_marginTop="70dp"/>
+
+                <TextView
+                    android:id="@+id/txtFat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fat"
+                    android:layout_marginLeft="120dp"
+                    android:layout_marginTop="40dp"/>
+
+                <TextView
+                    android:id="@+id/txtCholesterol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cholesterol"
+                    android:layout_marginLeft="120dp"
+                    android:layout_marginTop="70dp"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView >

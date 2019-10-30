@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.saadatdevelopment.lifepulse.searchdialognew">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.BODY_SENSORS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".diet.DietPlanRevamp.DietPlanRevamp"
+            android:parentActivityName=".MainActivity"/>
+
+        <activity android:name=".bmihealth.CreateFoodDiary"
+            android:parentActivityName=".bmihealth.FoodDiary">
+        </activity>
+        <activity
+            android:name=".Settings"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".StepCounter"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".goalsettings.ListOfExercises"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".User" />
+        <activity
+            android:name=".MonthlyReport"
+            android:parentActivityName=".MainActivity" /> <!-- Khalid -->
+        <activity
+            android:name=".goalsettings.SearchExercise"
+            android:parentActivityName=".goalsettings.GoalHomePage" />
+        <activity
+            android:name=".goalsettings.GoalHomePage"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".goalsettings.ExercisePage"
+            android:parentActivityName=".goalsettings.SearchExercise" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".DoctorRecommendation"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".AnnualReport"
+            android:parentActivityName=".MainActivity" /> <!-- Ody -->
+        <activity
+            android:name=".diet.HeartConditionExercises"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".diet.DailyChart"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".diet.WeeklyChart"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".diet.WeightTracking"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".diet.CalorieIntakeTracker"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".diet.DietPlanActivity"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="landscape" /> <!-- Miraj -->
+        <activity
+            android:name=".foods.FavoriteFood"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".HeartRatePopup"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".foods.FoodRecommendations"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".foods.FoodRestrictions"
+            android:parentActivityName=".MainActivity" /> <!-- Kevin -->
+        <activity
+            android:name=".bmihealth.BMIMainActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".bmihealth.BMI"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".bmihealth.FoodDiary"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".bmihealth.CustomRecipePart1"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".bmihealth.RecipeList"
+            android:parentActivityName=".MainActivity" />
+
+        <receiver android:name=".notificationservice.MyReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+                <action android:name="android.intent.action.TIME_SET" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".notificationservice.NotificationBackgroundService"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+
+    </application>
+
+    <uses-permission android:name="android.permission.SET_ALARM"/>
+</manifest>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DoctorRecommendation">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="81dp">
+
+            <TextView
+                android:id="@+id/txtDoorNoteTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="26dp"
+                android:layout_marginTop="31dp"
+                android:layout_marginBottom="31dp"
+                android:text="@string/doctor_recommendation"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="61dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="17dp"
+                android:layout_marginEnd="26dp"
+                android:layout_marginBottom="17dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/doctor_rec" />
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <View
+                android:id="@+id/view5"
+                android:layout_width="324dp"
+                android:layout_height="1.5dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="51dp"
+                android:layout_marginEnd="47dp"
+                android:background="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+            <ProgressBar
+                android:id="@+id/heartDefectProgressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="167dp"
+                android:layout_height="14dp"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="36dp"
+                android:layout_marginEnd="25dp"
+                android:progress="85"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/txtHeartDefect"
+                app:layout_constraintTop_toBottomOf="@+id/lowHeartRateProgressBar" />
+
+            <TextView
+                android:id="@+id/txtHeartDefect"
+                android:layout_width="163dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="27dp"
+                android:fontFamily="@font/helvetica"
+                android:text="@string/congenital_heart_defect"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtLowHeart" />
+
+            <ProgressBar
+                android:id="@+id/lowHeartRateProgressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="167dp"
+                android:layout_height="11dp"
+                android:layout_marginStart="91dp"
+                android:layout_marginTop="36dp"
+                android:layout_marginEnd="25dp"
+                android:progress="25"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/txtLowHeart"
+                app:layout_constraintTop_toBottomOf="@+id/heartRhythmProgressBar" />
+
+            <TextView
+                android:id="@+id/txtLowHeart"
+                android:layout_width="105dp"
+                android:layout_height="19dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/helvetica"
+                android:text="@string/low_heart_rate"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtAbnormalHeart" />
+
+            <ProgressBar
+                android:id="@+id/heartRhythmProgressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="167dp"
+                android:layout_height="11dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="59dp"
+                android:layout_marginEnd="36dp"
+                android:progress="75"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.312"
+                app:layout_constraintStart_toEndOf="@+id/txtAbnormalHeart"
+                app:layout_constraintTop_toBottomOf="@+id/view5" />
+
+            <TextView
+                android:id="@+id/txtAbnormalHeart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="53dp"
+                android:fontFamily="@font/helvetica"
+                android:text="@string/abnormal_heart_rhythms"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view5" />
+
+            <TextView
+                android:id="@+id/txtPatientName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="26dp"
+                android:layout_marginTop="26dp"
+                android:layout_marginEnd="2dp"
+                android:text="@string/dear_to"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toStartOf="@+id/txtUserName"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/txtDoctorNote"
+                android:layout_width="318dp"
+                android:layout_height="153dp"
+                android:layout_marginStart="26dp"
+                android:layout_marginTop="11dp"
+                android:text="TextView"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtPatientName" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="175dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="33dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtDoctorNote"
+                app:srcCompat="@drawable/doc_signature" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </LinearLayout>
+</RelativeLayout>

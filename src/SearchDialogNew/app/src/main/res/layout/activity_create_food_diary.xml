@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.circularreveal.coordinatorlayout.CircularRevealCoordinatorLayout
+    android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".bmihealth.CreateFoodDiary"
+    android:fitsSystemWindows="true"
+    android:id="@+id/diaryCoordinatorLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".CreateBird">
+
+            <TextView
+                android:id="@+id/txtProfileTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="136dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="135dp"
+                android:text="Write your diary"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/etDiaryName"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="36dp"
+                android:layout_marginTop="52dp"
+                android:layout_marginEnd="36dp"
+                android:ems="10"
+                android:hint="@string/name_diary"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtProfileTitle" />
+
+            <EditText
+                android:id="@+id/etDiaryGuiltLevel"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="36dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginEnd="36dp"
+                android:ems="10"
+                android:hint="@string/guilt_level_diary"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.454"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etDiaryName" />
+
+            <EditText
+                android:id="@+id/etDiaryDescription"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="36dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="36dp"
+                android:ems="10"
+                android:gravity="top"
+                android:hint="@string/descriptionDiary"
+                android:inputType="textMultiLine"
+                android:lines="5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.545"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etDiaryGuiltLevel" />
+
+            <Button
+                android:id="@+id/btnSaveDiary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="31dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginBottom="40dp"
+                android:drawableTop="@drawable/save_button"
+                android:background="@color/design_default_color_primary"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="Save"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etDiaryDescription"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fabPlusDiary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="76dp"
+                android:layout_marginEnd="32dp"
+                android:clickable="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etDiaryDescription"
+                app:srcCompat="@drawable/add_plus_icon" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fabCameraDiary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="21dp"
+                android:clickable="true"
+                android:visibility="invisible"
+                app:backgroundTint="@color/basic_fitness"
+                app:fabSize="normal"
+                app:layout_constraintBottom_toTopOf="@+id/fabPlusDiary"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:srcCompat="@drawable/camera_white" />
+
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+
+</android.support.design.circularreveal.coordinatorlayout.CircularRevealCoordinatorLayout>
+

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="okButton" />
+    <item type="id" name="Ascending" />
+    <item type="id" name="Descending" />
+</resources>

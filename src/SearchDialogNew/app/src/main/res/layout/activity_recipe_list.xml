@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Displays the list of recipes to be selected-->
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".bmihealth.RecipeList">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btn_add_recipe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="298dp"
+            android:layout_marginTop="532dp"
+            android:layout_marginEnd="25dp"
+            android:text="@string/add" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recipe_list"
+            android:layout_width="match_parent"
+            android:layout_height="732dp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="0dp">
+
+
+        </android.support.v7.widget.RecyclerView>
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

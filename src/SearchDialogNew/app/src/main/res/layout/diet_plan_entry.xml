@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="145dp"
+    >
+
+    <ImageView
+        android:id="@+id/btn_delete_diet_plan"
+        android:layout_width="59dp"
+        android:layout_height="27dp"
+        app:srcCompat="@drawable/delete_arrow" />
+
+    <TextView
+        android:id="@+id/txt_food_choice"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="16pt" />
+
+    <TextView
+        android:id="@+id/txt_notification_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20pt"
+        android:text="time"/>
+
+    <Switch
+        android:id="@+id/switch_on_off"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_gravity="right"
+        android:layout_marginTop="100dp"
+        android:text="On/Off" />
+</android.support.v7.widget.CardView>
