@@ -46,3 +46,12 @@ dependencies {
     // makes permission process faster
     implementation 'com.karumi:dexter:5.0.0'
 }
+
+android {
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+}
